@@ -1,0 +1,32 @@
+{
+  "name": "webpack_lmj",
+  "version": "1.0.0",
+  "description": "웹팩 스터디",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "webpack": "^1.13.3"
+  },
+  "devDependencies": {
+    "css-loader": "^0.26.0",
+    "html-webpack-plugin": "^2.24.1",
+    "style-loader": "^0.13.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qnfzks55/webpack_lmj.git"
+  },
+  "keywords": [
+    "webpack",
+    "웹팩",
+    "웹팩스터디"
+  ],
+  "author": "이명종",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qnfzks55/webpack_lmj/issues"
+  },
+  "homepage": "https://github.com/qnfzks55/webpack_lmj#readme"
+}
