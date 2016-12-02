@@ -12,7 +12,7 @@ module.exports = {
     plugins: [
         new Webpack.optimize.UglifyJsPlugin({
             compressor: {
-                warnings: false
+                warnings: false,
             }
         }),
         new Webpack.optimize.OccurrenceOrderPlugin(),
