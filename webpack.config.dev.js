@@ -3,19 +3,19 @@ var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry: ['./src/index'],
+    devtool: 'cheap-eval-source-map',
+    entry: [
+        'webpack-dev-server/client?http://localhost:8080',
+        'webpack/hot/dev-server',
+        './src/index'
+    ],
     output: {
         path: path.join(__dirname, 'dist'),
         filename: 'bundle.js'
     },
 
     plugins: [
-        new Webpack.optimize.UglifyJsPlugin({
-            compressor: {
-                warnings: false
-            }
-        }),
-        new Webpack.optimize.OccurrenceOrderPlugin(),
+        new webpack.HotModuleReplacementPlugin(),
         new HtmlWebpackPlugin({
             template: './src/index.html'
         })
@@ -26,5 +26,9 @@ module.exports = {
             test: /\.css$/,
             loaders: ['style', 'css']
         }]
+    },
+    devServer: {
+        contentBase: './dist',
+        hot: true
     }
 };
