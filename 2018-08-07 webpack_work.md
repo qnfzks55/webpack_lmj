@@ -1,8 +1,12 @@
 # Webpack을 활용한 작업환경 구축
-18.08.07 - WP_WP2 이명종 
+18.08.07
+
+## 발표자 소개
+<img src="https://github.com//qnfzks55/webpack_lmj/blob/master/profile.jpg?raw=true" />
+HACKERS WP_WP2 이명종 
 
 ## 주제 선정 이유
-주제가 고갈되어서
+주제가 고갈되는 바람에
 
 ## 목차
 
