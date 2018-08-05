@@ -15,7 +15,7 @@
 * [ES6 & Babel](#es6--babel)
 * [SASS](#sass)
 * [Webpack](#webpack)
-* [Q&A]()
+* [Q&A](#qa)
 * [참고 링크](#참고-링크)
 
 ## IDE 선택
@@ -206,32 +206,32 @@ module.exports = {
     },
     module: {
         rules: [ // 어플리케이션을 위해 적어줄 로더들 배열
-	        {
+			{
 				test: /\.scss$/, // 로더가 적용될 파일 매칭을 위한 배열
 				exclude: /node_modules/,
 				use: ['css-hot-loader', MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
-	        },
-            {
+			},
+			{
 				test: /\.html$/,
 				exclude: /node_modules/,
 				use: 'raw-loader'
-            },
-            {
-                test: /\.(js|jsx)$/,
-                exclude: /node_modules/,
-                use: {
-                    loader: 'babel-loader',
-                    options: {
-                    	babelrc: true,
-                        presets: ['es2015', 'react', 'stage-2']
-                    }
-                }
-            },
-	        {
-		        test: /\.(jpe?g|png|gif|svg|ico)$/i,
-		        exclude: /node_modules/,
-		        use: 'file-loader?name=[name].[ext]&publicPath=../img/&outputPath=./img/'
-	        }
+			},
+			{
+				test: /\.(js|jsx)$/,
+				exclude: /node_modules/,
+				use: {
+					loader: 'babel-loader',
+					options: {
+						babelrc: true,
+						presets: ['es2015', 'react', 'stage-2']
+					}
+				}
+			},
+			{
+				test: /\.(jpe?g|png|gif|svg|ico)$/i,
+				exclude: /node_modules/,
+				use: 'file-loader?name=[name].[ext]&publicPath=../img/&outputPath=./img/'
+			}
         ]
     },
 	plugins: [
