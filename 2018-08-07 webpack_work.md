@@ -157,7 +157,7 @@ var clickEvent = function clickEvent() {
 
 ### SASS와 SCSS의 차이
 * `Sass` (indented Syntax 들여쓰기 문법)
-        * 이전 버전으로 `Sass` 확장자는 `Ruby`의 영향을 받은 간결한 문법을 사용한다.
+    * 이전 버전으로 `Sass` 확장자는 `Ruby`의 영향을 받은 간결한 문법을 사용한다.
     * `CSS` 문법에서 반복 사용되는 {}, ; 등을 사용하지 않는다.
     * 변수명에 ! 를, 속성과 값의 구분자인 특수기호로 = 를 사용한다.
 * `SCSS` (`CSS`와 같은 문법)
@@ -207,14 +207,14 @@ module.exports = {
     module: {
         rules: [ // 어플리케이션을 위해 적어줄 로더들 배열
 	        {
-		        test: /\.scss$/, // 로더가 적용될 파일 매칭을 위한 배열
-		        exclude: /node_modules/,
-		        use: ['css-hot-loader', MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
+				test: /\.scss$/, // 로더가 적용될 파일 매칭을 위한 배열
+				exclude: /node_modules/,
+				use: ['css-hot-loader', MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
 	        },
             {
-                test: /\.html$/,
-                exclude: /node_modules/,
-                use: 'raw-loader'
+				test: /\.html$/,
+				exclude: /node_modules/,
+				use: 'raw-loader'
             },
             {
                 test: /\.(js|jsx)$/,
