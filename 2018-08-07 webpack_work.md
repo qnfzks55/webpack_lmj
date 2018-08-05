@@ -359,9 +359,13 @@ optimization: { /* webpack 4에서 새로추가됨 */
 `$ webpack --watch` (감시 모드)
 
 ### Webpack 에서 Babel 세팅하기
-1. 기본 `babel` 설치를 해준다.<br />
+
+<img src="https://github.com//qnfzks55/webpack_lmj/blob/master/webpack_plus.jpg?raw=true" />
+
+1. `babel` 설치를 해준다.<br />
 `$ npm i -D babel-core babel-loader babel-preset-2015`
 2. `loader`에 `babel-loader`를 추가하여 준다.
+
 ```javascript
 {
     test: /\.js$/,
@@ -375,6 +379,7 @@ optimization: { /* webpack 4에서 새로추가됨 */
     }
 }
 ```
+> 이외에도 [babel-polyfill](https://babeljs.io/docs/en/babel-polyfill/) 패키지를 추가적으로 설치하여 `ES6` 문법만 컴파일하여 사용하는게 아닌, `ES6` 의 새로운 객체들(`Promise`, `MAP` 등)을 컴파일하여 사용할 수 있다.
 
 ## Q&A
 
