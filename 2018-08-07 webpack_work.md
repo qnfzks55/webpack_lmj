@@ -6,7 +6,7 @@
 이명종
 
 ## 주제 선정 이유
-:)
+발표할 주제가 고갈되서
 
 ## 목차
 
@@ -347,10 +347,10 @@ optimization: { /* webpack 4에서 새로추가됨 */
 ```
 
 ### 설치
-1. 터미널 사용을 위하여 전역으로 설치한다. (현재 4버전)
+1. 터미널 사용을 위하여 전역으로 설치한다. (현재 4버전)<br />
 `$ npm i -g webpack`
 
-2. 로컬에서 개발모듈로 설치한다.
+2. 로컬에서 개발모듈로 설치한다.<br />
 `$ npm i -D webpack webpack-cli`
 
 > `Webpack 4` 에서 기본적으로 `webpack-cli` 모듈을 설치하여야 한다.<br />
@@ -360,7 +360,7 @@ optimization: { /* webpack 4에서 새로추가됨 */
 `$ webpack --watch` (감시 모드)
 
 ### Webpack 에서 Babel 세팅하기
-1. 기본 `babel` 설치를 해준다.
+1. 기본 `babel` 설치를 해준다.<br />
 `$ npm i -D babel-core babel-loader babel-preset-2015`
 2. `loader`에 `babel-loader`를 추가하여 준다.
 ```javascript
