@@ -1,11 +1,11 @@
-# Webpack을 활용한 프론트개발환경 구축
+# Webpack을 활용한 개발환경 구축
 18.08.07 HACKERS WP_WP2 이명종 
 
 ## 발표자 소개
 <img src="https://github.com//qnfzks55/webpack_lmj/blob/master/profile.jpg?raw=true" />
 
 ## 주제 선정 이유
-발표할 주제가 고갈되서
+이미 다해서 할께 없어요ㅜ
 
 ## 목차
 
@@ -77,7 +77,7 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
-      "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     },
@@ -216,13 +216,13 @@ module.exports = {
 				use: 'raw-loader'
 			},
 			{
-				test: /\.(js|jsx)$/,
+				test: /\.js$/,
 				exclude: /node_modules/,
 				use: {
 					loader: 'babel-loader',
 					options: {
 						babelrc: true,
-						presets: ['es2015', 'react', 'stage-2']
+						presets: ['es2015']
 					}
 				}
 			},
@@ -266,12 +266,12 @@ module.exports = {
 ```javascript
 {
     entry: {
-        app: ['a.js', 'b.js']
+        app: ['one.js', 'two.js', 'three.js']
     },
 }
 ```
 
-앞에서 설명했듯 위의 배열의 경우는 `a.js` 랑 `b.js` 가 한 파일로 엮여 `app.js` 로 합쳐진다. 이렇게 웹팩은 `entry` 의 `js` 파일부터 시작해서 `import, require` 관계로 묶여진 다른 `js` 까지 알아서 파악한 뒤 모두 `entry` 에 기재된 **키 개수** 만큼으로 묶어준다.
+앞에서 설명했듯 위의 배열의 경우는 `one.js` 랑 `two.js`, `three.js` 가 한 파일로 엮여 `app.js` 로 합쳐진다. 이렇게 웹팩은 `entry` 의 `js` 파일부터 시작해서 `import, require` 관계로 묶여진 다른 `js` 까지 알아서 파악한 뒤 모두 `entry` 에 기재된 **키 개수** 만큼으로 묶어준다.
 
 #### 3) output
 `Webpack` 에 의해 출력되는 형태를 나타낸다.
